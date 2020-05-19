@@ -10,7 +10,7 @@ spec:
   helmVersion: v3
   releaseName: whoami
   chart:
-    git: ssh://git@github.com/Fleuri/verifa-tutorials/whoami
+    git: ssh://git@github.com/fleuri/verifa-tutorials
     ref: master
     path: whoami/helm
 
