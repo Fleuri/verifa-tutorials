@@ -1,0 +1,8 @@
+version: "3.8"
+services:
+    api:
+        image: verifa/whoami:0.1.6
+        ports:
+        - "8000:5000"
+        deploy:
+            replicas: 2

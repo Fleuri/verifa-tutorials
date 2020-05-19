@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: whoami-deploy
+  labels:
+    app: whoami
+spec:
+  replicas: 2
+  selector:
+      matchLabels:
+        app: whoami
+  template:
+    metadata:
+      name: whoami
+      labels:
+        app: whoami
+    spec:
+      containers:
+      - name: whoami-pod
+        image: verifa/whoami:0.1.6
+        ports:
+          - containerPort: 5000

@@ -1,0 +1,3 @@
+git:
+  url: git@github.com:verifa/tutorials/whoami
+  readonly: True

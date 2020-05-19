@@ -1,0 +1,16 @@
+---
+apiVersion: helm.fluxcd.io/v1
+kind: HelmRelease
+metadata:
+  name: whoami
+  namespace: whoami
+  annotations:
+    fluxcd.io/automated: "false"
+spec:
+  helmVersion: v3
+  releaseName: whoami
+  chart:
+    git: ssh://git@github.com/verifa/tutorials/whoami
+    ref: master
+    path: whoami/helm
+
