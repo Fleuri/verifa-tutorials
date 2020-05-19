@@ -1,10 +1,10 @@
 replicaCount: 5
 
 image:
-  repository: verifa/whoami
+  repository: gcr.io/hazel-aquifer-259216/whoami
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart version.
-  tag: ""
+  tag: "latest"
 
 imagePullSecrets: []
 nameOverride: ""
